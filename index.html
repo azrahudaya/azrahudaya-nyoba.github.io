@@ -16,14 +16,14 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
     />
     <link rel="stylesheet" href="path/to/tailwind.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/@heroicons/vue@1.0.3/dist/full-page.min.css"
-      rel="stylesheet"
-    />
+    <style>
+      @media (max-width: 767px) {
+        /* Styles for screens smaller than 768px (e.g., mobile devices) */
+        #projects .text-sm {
+          display: none; /* Hide text-sm (paragraph) on small screens */
+        }
+      }
+    </style>
   </head>
   <!-- Head yaa -->
 
@@ -125,9 +125,9 @@
                   alt="inkscape"
                   class="mb-2 rounded-lg"
                 />
-                <h3 class="text-lg font-bold">Inkscape</h3>
               </a>
-              <p class="text-gray-600 text-sm">
+              <h3 class="text-lg font-bold hidden md:block">Inkscape</h3>
+              <p class="text-gray-600 text-sm hidden md:block">
                 I'm proficient in Inkscape at an advanced level.
               </p>
             </div>
@@ -143,7 +143,9 @@
                   alt="CSP"
                   class="mb-2 rounded-lg"
                 />
-                <h3 class="text-lg font-bold">Clip Studio Paint</h3>
+                <h3 class="text-lg font-bold hidden md:block">
+                  Clip Studio Paint
+                </h3>
               </a>
               <p class="text-gray-600 text-sm">
                 I'm intermediate in Clip Studio Paint.
@@ -164,7 +166,9 @@
                   alt="CSP"
                   class="mb-2 rounded-lg"
                 />
-                <h3 class="text-lg font-bold">Adobe Illustrator</h3>
+                <h3 class="text-lg font-bold hidden md:block">
+                  Adobe Illustrator
+                </h3>
               </a>
               <p class="text-gray-600 text-sm">
                 I'm a beginner in Adobe Illustrator.
@@ -185,7 +189,9 @@
                   alt="Project 1"
                   class="mb-2 rounded-lg"
                 />
-                <h3 class="text-lg font-bold">Adobe Photoshop</h3>
+                <h3 class="text-lg font-bold hidden md:block">
+                  Adobe Photoshop
+                </h3>
               </a>
               <p class="text-gray-600 text-sm">
                 I'm a beginner in Adobe Photoshop.
@@ -203,7 +209,7 @@
                   alt="Project 1"
                   class="mb-2 rounded-lg"
                 />
-                <h3 class="text-lg font-bold">Figma</h3>
+                <h3 class="text-lg font-bold hidden md:block">Figma</h3>
                 <p class="text-gray-600 text-sm">
                   I'm at an intermediate level in Figma.
                 </p>
@@ -221,7 +227,7 @@
                   alt="Project 1"
                   class="mb-2 rounded-lg"
                 />
-                <h3 class="text-lg font-bold">Microsoft 365</h3>
+                <h3 class="text-lg font-bold hidden md:block">Microsoft 365</h3>
                 <p class="text-gray-600 text-sm">
                   I have advanced level in Microsoft 365.
                 </p>
@@ -239,7 +245,7 @@
                   alt="Project 1"
                   class="mb-2 rounded-lg"
                 />
-                <h3 class="text-lg font-bold">HTML5</h3>
+                <h3 class="text-lg font-bold hidden md:block">HTML5</h3>
                 <p class="text-gray-600 text-sm">
                   I have intermediate level in HTML5.
                 </p>
@@ -257,7 +263,7 @@
                   alt="Project 1"
                   class="mb-2 rounded-lg"
                 />
-                <h3 class="text-lg font-bold">CSS3</h3>
+                <h3 class="text-lg font-bold hidden md:block">CSS3</h3>
                 <p class="text-gray-600 text-sm">
                   I have intermediate level in CSS3.
                 </p>
@@ -275,7 +281,7 @@
                   alt="Project 1"
                   class="mb-2 rounded-lg"
                 />
-                <h3 class="text-lg font-bold">Bootstrap</h3>
+                <h3 class="text-lg font-bold hidden md:block">Bootstrap</h3>
                 <p class="text-gray-600 text-sm">
                   I have intermediate level in Bootstrap.
                 </p>
@@ -293,7 +299,7 @@
                   alt="Project 1"
                   class="mb-2 rounded-lg"
                 />
-                <h3 class="text-lg font-bold">Tailwind</h3>
+                <h3 class="text-lg font-bold hidden md:block">Tailwind</h3>
                 <p class="text-gray-600 text-sm">
                   I have intermediate level in Tailwind.
                 </p>
@@ -311,7 +317,7 @@
                   alt="Project 1"
                   class="mb-2 rounded-lg"
                 />
-                <h3 class="text-lg font-bold">Arduino</h3>
+                <h3 class="text-lg font-bold hidden md:block">Arduino</h3>
                 <p class="text-gray-600 text-sm">
                   I have intermediate level in Arduino.
                 </p>
@@ -329,7 +335,9 @@
                   alt="Project 1"
                   class="mb-2 rounded-lg"
                 />
-                <h3 class="text-lg font-bold">Davinci Resolve</h3>
+                <h3 class="text-lg font-bold hidden md:block">
+                  Davinci Resolve
+                </h3>
                 <p class="text-gray-600 text-sm">
                   I have intermediate level in Resolve Davinci.
                 </p>
